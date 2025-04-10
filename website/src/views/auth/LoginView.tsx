@@ -12,8 +12,8 @@ export default function LoginView() {
 
   const [showPassword, setShowPassword] = useState(false);
   const initialValues: UserLoginForm = {
-    email: '',
-    password: '',
+    email: 'ryo@mail.com',
+    password: '12345678',
   }
   const { register, handleSubmit, formState: { errors } } = useForm({ defaultValues: initialValues })
   const navigate = useNavigate()
